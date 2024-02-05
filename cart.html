@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="./css/web.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/1a4b9abd3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+    <h1 style="margin-bottom: 50px;">Your Shopping Cart</h1>
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th class="cart-image">Image</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div id="totalPriceContainer">
+        <p><strong>Total Price:</strong> ₹ <span id="totalPrice">0</span></p>
+      </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+    <script>
+        // Assuming your cartItems array is populated before this point
+        document.addEventListener('DOMContentLoaded', function () {
+            displayCartItems();
+        });
+    </script>
+</body>
+</html>
