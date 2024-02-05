@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnvoCare</title>
+    <link rel="icon" href="./images/web_icon.png" type="image/jpeg">
+
+    <link rel="stylesheet" href="./css/web.css">
+    <a href="wishlist.html"></a>
+    <a href="cart.html"></a>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <script src="https://kit.fontawesome.com/1a4b9abd3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <div class="header-nav">
+                    <div class="logo">
+                        <img src="./images/web_logo.png" class="logo">
+                    </div>
+                    <div class="icons">
+                        
+                        <a href="./wishlist.html"></a><i class="fa-solid fa-heart"></i>
+                       <a style="color: black;" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+<div class="cart-icon">
+  <span id="cart_quantity" class="quantity">0</span>
+</div>
+
+                    
+                    </div>
+                </div>
+                
+                <ul id="services">
+                    
+                    <li><a href="#HomePage">Home</a></li>
+                    <li><a href="#Backimg_Dashboard">About Us</a></li>
+                    <li><a href="#SkinCare">SkinCare</a></li>
+                    <li><a href="#Medicine">Medicine</a></li>
+                    <li><a href="#Homeware">Homeware</a></li>
+                    <li><a href="#Clothing">Clothing</a></li>
+                    <li><a href="#Eatables">Eatables</a></li>
+                    <li><a href="#WomenHygiene">WomenHygiene</a></li>
+                </ul>
+            
+            </nav>
+            <div id="header-text">
+                <h1>This is <span>EnvoCare!</span> </h1>
+                <p>EnvoCare: Naturally Yours,<br>
+                    Earth-Friendly Forever</p>
+            </div>
+        </div>
+    </div>
+    
+<!-- scroll top -->
+<button id="scrollTopBtn" onclick="scrollToTop()">Back To Top</button>
+
+<!------------pop up container-------->
+<div class="popup-container" id="popupContainer">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Item added to cart!</p>
+    </div>
+</div>
+
+<!---------------About--------------------->
+<div id="Backimg_Dashboard">
+<div class="dashboard">
+    <div class="header">
+        <h1>About Us</h1>
+    </div>
+    <div class="content">
+        <div class="graph-container">
+            <h2>Sales Graph</h2>
+            <canvas id="salesGraph"></canvas>
+        </div>
+        <div class="data-boxes">
+            <div class="data-box">
+                <h3>Customers</h3>
+                <p id="salesCount">800+</p>
+                
+                
+            </div>
+            <div class="data-box">
+                <h3>Sales</h3>
+                <p id="salesCount">1000+</p>
+            </div>
+            <div class="data-box">
+                <h3>Countries</h3>
+                <p id="countryCount">10+</p>
+            </div>
+        </div>
+        <div class="pie-chart-container">
+            <h2>Pie Chart</h2>
+            <canvas id="pieChart"></canvas>
+        </div>
+        <div class="world-map-container">
+            <h2>World Map</h2>
+            <div id="worldMap"></div>
+        </div>
+    </div>
+</div>
+</div>
+    <!---------------Skincare---------->
+
+<div id="our-content">
+    <div id="SkinCare">
+    <div class="about-section">
+        <h1 class="subtitle">SkinCare</h1>
+        <p>Nature's Elixir for Your Skin's Delight.</p>
+        
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+       
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/skincare1.jpeg">
+                <div class="layer">
+                  <h3>Gentle Cleanser <br> <b>&#8377 312</b> </h3>
+                  <p>Deep Hydration | Softens & Supple Skin | Anti-wrinkle | Toning | Brightening</p>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                  <button class="addToCartBtn" onclick="addToCart(1)">Add to Cart</button>
+
+                </div>
+              </div>
+
+        
+
+            <div class="work">
+                <img src="./images/skincare3.jpeg" >
+                <div class="layer">
+                    <h3>Brighten Skin Toner <br> <b>&#8377 590</b></h3>
+                    <p>Fade Age Spots | Reduce Fine Line | Smoothen Complexion</p>
+                    <a href="#" ><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(2)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/skincare4.jpeg" >
+                <div class="layer">
+                    <h3>Hair Cleanser <br> <b>&#8377 699</b></h3>
+                    <p>#ecosorbet #peachcosmetics #natural
+                        Faster Hair Growth | Fights Hairfall | Prevents Breakage & Split Ends</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(3)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/skincare5.jpeg" >
+                <div class="layer">
+                    <h3>Organic BodyWash <br> <b>&#8377 699</b> </h3>
+                    <p>Elevate your bath time with our bath products rich in Vitamins and organic ingredients for softer skin</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(4)">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="./images/skincare7.jpeg" >
+                <div class="layer">
+                    <h3>Natural Hair Oil <br> <b>&#8377 999</b></h3>
+                    <p>Stimulates New Hair Growth | Controls Hair Fall | Reduces Hair Breakage</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(5)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/skincare8.jpeg" >
+                <div class="layer">
+                    <h3>Happy Bath <br> <b>&#8377 599</b></h3>
+                    <p>Gentle Cleansing | Deep Hyderation | Softens & Suples Skin | Anti-wrinkle | Toning | Brightening</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(6)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn" >See more</a>
+    </div>
+</div>
+
+<!-------------------Medicine----------------->
+<div id="Medicine">
+<div class="about-section">
+    <h1 class="subtitle">Medicine</h1>
+    <p>Nature's Cure , Naturally Pure!</p>
+    
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+   
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/medicine2.png" >
+            <div class="layer">
+                <h3>Plant Based MultiVitamin <br> <b>&#8377 499</b></h3>
+                <p>21 Ayurvedic herbs|Putranjivak|Shatavari|Yashtimadhu|Natural Iron</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(7)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/medicine3.png" >
+            <div class="layer">
+                <h3>Organic India Immunity - 60 Capsules Bottle <br> <b>&#8377 399</b></h3>
+                <p> Katuki Rhizome 165 mg|Krishna Tulsi Leaf 55 mg|Vana Tulsi Leaf 55 mg</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(8)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/Medicine4.webp.png" >
+            <div class="layer">
+                <h3>Ayurvedic Beautiful Skin Care Capsule -60caps <br> <b>&#8377 699</b></h3>
+                <p>Organics Plant Based Multivitamin 60+ Ingredients With Vitamin B1, B2, B3, B5, B6, B7, B9, B12, A, C, D, E, K, Calcium.</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(9)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Medicine5.webp.png" >
+            <div class="layer">
+                <h3>True Basics LungDetox <br> <b>&#8377 499</b></h3>
+                <p>BioPerine & Gingever and potent herbal extracts, it provides complete lung care.</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(10)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/medicine8.png" >
+            <div class="layer">
+                <h3>EarthFul-Women Multi Vitamin 40+ <br> <b>&#8377 899</b></h3>
+                <p>Vegetarian Capsule shell|60 Capsules (30 day pack)|100% Plant. No side effects|Researched by doctors, nutritionists|FSSAI & GMP approved</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(11)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Medicine7.webp.png" >
+            <div class="layer">
+                <h3>Organic Herbs Neem Capsules <br> <b>&#8377 599</b></h3>
+                <p>Neem Leaves 600 mg|Neem Soft Twigs 30 mg|Neem Flowers 20 mg</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(12)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+
+<!-------------------HomeDecor----------------->
+<div id="Homeware">
+<div class="about-section">
+    <h1 class="subtitle">Homeware</h1>
+    <p>100% Recycled | Longer life | Carbon free </p>
+    
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+   
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/home2.webp" >
+            <div class="layer">
+                <h3>Recycled Paper Roll<br> <b>&#8377 299</b></h3>
+                <p>- Made from 100% recycled paper, The Good Karma toilet rolls are 100% recycled , including the packaging.Invest in a sustainable future now!</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(13)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/home3.webp" >
+            <div class="layer">
+                <h3>Orange Metal Chair<br> <b>&#8377 3999</b></h3>
+                <p>Steel furniture- no wood, happy environment </p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(14)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/home5.jpeg" >
+            <div class="layer">
+                <h3>Recycled GlassWare <br> <b>&#8377 999</b></h3>
+                <p>Glassware- made from recycled glass, wine bottles, free from polluting plastics</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(15)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/home1.jpg" >
+            <div class="layer">
+                <h3>Set of Colorful chairs <br> <b>&#8377 3999</b></h3>
+                <p>Recycled plastic furniture made from 100% recycled plastic</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(16)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/home6.webp" >
+            <div class="layer">
+                <h3>Marble Table <br> <b>&#8377 10000</b></h3>
+                <p>The base in wood features two sets of feet with a lavish gold leaf that strikingly complements the top in Calacatta marble framed in brass. </p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(17)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/home4.webp" >
+            <div class="layer">
+                <h3>Metal Chair <br> <b>&#8377 999</b></h3>
+                <p>No wood, happy environment | Made from 100% recycled plastic
+                    </p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <button class="addToCartBtn" onclick="addToCart(18)">Add to Cart</button>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+
+
+
+<!-------------------Clothing----------------->
+<div id="Clothing">
+<div class="about-section">
+    <h1 class="subtitle">Clothing</h1>
+    <p> Made from organic fibres | Biodegradable packaging | Free from chemical dyes</p>
+    
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+   
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/cloth1.webp" >
+            <div class="layer">
+                <h3>White Kurti <br> <b>&#8377 999</b></h3>
+                <p>100% pure cotton, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(19)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/cloth2.webp" >
+            <div class="layer">
+                <h3>Yellow Co-ord Set <br> <b>&#8377 1999</b></h3>
+                <p>100% pure cotton, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(20)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/cloth3.webp" >
+            <div class="layer">
+                <h3>Black Shirt <br> <b>&#8377 999</b></h3>
+                <p>100% pure linen, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(21)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/cloth4.webp" >
+            <div class="layer">
+                <h3>Brown Shirt<br> <b>&#8377 999</b></h3>
+                <p>100% pure linen, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(22)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/cloth5.png" >
+            <div class="layer">
+                <h3>White Embroided Kurti <br> <b>&#8377 999</b></h3>
+                <p>100% pure cotton, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(23)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/cloth6.png" >
+            <div class="layer">
+                <h3>White Embroided Kurti <br> <b>&#8377 999</b></h3>
+                <p>100% pure linen, natural dyes</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(24)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+
+<!-------------------Eatables----------------->
+<div id="Eatables">
+<div class="about-section">
+    <h1 class="subtitle">Mindful Eating</h1>
+    <p>What we eat is what we become.</p>
+    
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+   
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/Eat1.jpg" >
+            <div class="layer">
+                <h3>Pure and natural jaggery <br> <b>&#8377 599</b></h3>
+                <p>Great alternative to white sugar. Chemical free. High in nutrition (1kg)</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(25)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/eat5.avif" >
+            <div class="layer">
+                <h3>Raw Himalyan Honey <br> <b>&#8377 499</b></h3>
+                <p>- Sourced from the jungle areas of Reasi, Jammu, Doda and Udhampur, Raw Himalayan Honey is unprocessed honey in its purest form. </p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(26)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/Eat2.webp" >
+            <div class="layer">
+                <h3>Ashwaghanda - ORGANIC INDIA Ashwagandha Ayurvedic Capsules <br> <b>&#8377 799</b></h3>
+                <p>Relieves Stress & Builds Vitality|A natural dietary supplement to treat low energy states and exhaustion|Protects against infections, cold and flu
+                    .</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(27)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="work">
+            <img src="./images/Eat3.webp" >
+            <div class="layer">
+                <h3>Desi cow Ghee <br> <b>&#8377 599</b></h3>
+                <p>-  Made by an ancient Indian Bilona method, this Ghee is Healthier, Tastier & Aromatic, as all the nutrients of the milk are retained in the curd from which the Ghee is made</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(28)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Eat4.jpg" >
+            <div class="layer">
+                <h3>Raw Himalayan Honey<br> <b>&#8377 599</b></h3>
+                <p>- Sourced from the jungle areas of Reasi, Jammu, Doda and Udhampur, Raw Himalayan Honey is unprocessed honey in its purest form. </p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(29)">Add to Cart</button>
+            </div>
+        </div>
+        
+        <div class="work">
+            <img src="./images/eat6.webp" >
+            <div class="layer">
+                <h3>Sanjeevini Multigrain Health Drink<br> <b>&#8377 999</b></h3>
+                <p>Millets and multigrains from across India come together to make Sanjeevini, a wholesome health drink which takes an instant to prepare.</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(30)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+
+<!-------------------WomenHygiene----------------->
+<div id="WomenHygiene">
+<div class="about-section">
+    <h1 class="subtitle">WomenHygiene</h1>
+    <p>Take care of your body, and your body will take care of you.</p>
+    
+</div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+   
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/Women1.jpeg" >
+            <div class="layer">
+                <h3>She'sCup <br> <b>&#8377 399</b></h3>
+                <p>Allergen-free and non-irritating|Maintaining vaginal pH and flora|Freedom of movement</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(31)">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="work">
+            <img src="./images/Women3.jpeg" >
+            <div class="layer">
+                <h3>100% Organic Tampons<br> <b>&#8377 399</b></h3>
+                <p>100% Organic Tampons|Leak-free|Odour-Free|Comfortable</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(32)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Women4.jpeg.png" >
+            <div class="layer">
+                <h3>Plush Intimate Wash<br> <b>&#8377 299</b></h3>
+                <p>100% Water based|pH Balanced|Infused with Aloe Vera||Discreet delivery.</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(33)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/women5.png" >
+            <div class="layer">
+                <h3>Daily Use Products<br> <b>&#8377 299</b></h3>
+                <p>o Maintain The pH Balance Of Your Genitals | Dermatologically Tested</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(34)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Women6.jpeg.png" >
+            <div class="layer">
+                <h3>Hassle-free Menses<br> <b>&#8377 399</b></h3>
+                <p>Stay ahead of your period with our complete Menstrual Care Kit. </p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(35)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/Women8.jpeg.png" >
+            <div class="layer">
+                <h3>Juicy Chemistry Intimate Powder<br> <b>&#8377 399</b></h3>
+                <p>This organic dusting powder is a blend of pure floral powders of Damask Rose (Gulab) and Jasmine (Chameli), gentle clays, and root powders, that work together to keep skin dry and cool.</p>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <button class="addToCartBtn" onclick="addToCart(36)">Add to Cart</button>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+    
+
+    <div class="footer-panel2">
+    <ul>
+        <p>Get to Know Us</p>
+        <a>Careers</a>
+        <a>Blog</a>
+        <a>About EnvoCare</a>
+        <a>Invester Relations</a>
+        <a>EnvoCare Devices</a>
+        <a>EnvoCare Services</a>
+    </ul>
+    <ul>
+        <p>Make Money with Us</p>
+        <a>Sell products on EnvoCare</a>
+        <a>Sell on EnvoCare Business</a>
+        <a>Sell apps on EnvoCare</a>
+        <a>Become an Affiliate</a>
+        <a>Advertise your products</a>
+        <a>Self Publish with Us</a>
+        <a>Host an EnvoCare Hub</a>
+    </ul>
+    <!-- <ul>
+        <p>EnvoCare Pyment Products</p>
+        <a>EnvoCare Business Card</a>
+        <a>Shop with Points</a>
+        <a>Reload your Balance</a>
+        <a>EnvoCare Currency Converter</a>
+    </ul> -->
+    <ul>
+        <p>Let Us Help You</p>
+        <a>EnvoCare and COVID-19</a>
+        <a>Your EnvoCare</a>
+        <a>Your Orders</a>
+        <a>Shipping Rates & Policies</a>
+        <a>Returns & Replacements</a>
+        <a>Manage Your Content & Devices</a>
+    </ul>
+    </div>
+
+    <div class="footer-panel3">
+       <div class="logo">
+        <img src="./images/web_logo.png" alt="">
+       </div>
+    </div>
+
+    <div class="footer-panel4">
+        <div class="pages">
+            <a href="">Conditions of Use</a>
+            <a href="">Privacy Notice</a>
+            <a href="">Your ADs Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            &#169 2024, EnvoCare.com , Made with 💙 by Sahil & Neelancy
+        </div>
+    </div>
+</footer>
+    <script src="./js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Assuming your cartItems array is populated before this point
+          displayCartItems();
+        });
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script> 
+    <script src="scripts.js"></script>
+    <script src="./js/web.js"></script>
+</body>
+
+
+</html>
